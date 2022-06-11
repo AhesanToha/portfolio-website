@@ -1,7 +1,16 @@
 import React from "react";
 
 const Footer = () => {
-  return <div></div>;
+  const date = new Date();
+  const year = date.getFullYear();
+  return (
+    <footer class="footer footer-center p-8 bg-black text-white">
+  <div>
+    <p><p>Copyright &copy;{year} M. Ahesanul Hoque Toha</p></p>
+  </div>
+</footer>
+  
+  );
 };
 
 export default Footer;

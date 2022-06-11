@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Shared/Footer";
 // import { useNavigate } from "react-router-dom";
 import About from "./About";
 import Banner from "./Banner";
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <Projects />
       <Contact />
+      <Footer></Footer>
     </div>
   );
 };
