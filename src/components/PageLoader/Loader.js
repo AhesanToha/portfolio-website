@@ -29,7 +29,7 @@ const Loader = () => {
       <div className="loader-container">
         <div className="loader-wrap">
           <h2 className="lg:text-2xl font-mono text-primary">
-            Welcome to Fahad's Portfolio!
+            Welcome to M. Ahesanul Hoque Toha's Portfolio!
           </h2>
           <motion.div
             className="loader-bar"

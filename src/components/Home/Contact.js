@@ -10,17 +10,17 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.user_name.value = "";
-    e.target.user_email.value = "";
-    e.target.message.value = "";
+    const from_name = e.target.user_name.value;
+    const email_id = e.target.user_email.value;
+    const message = e.target.message.value;
+    const param = {
+      from_name,
+      email_id,
+      message,
+    };
 
     emailjs
-      .sendForm(
-        "service_zx6aiz5",
-        "template_h9vkmoh",
-        form.current,
-        "lBOWjAhKbhsqa9P-Y"
-      )
+      .send("service_km82wmo", "template_0mrfm2x", param, "zAFGDApa7728ARtcy")
       .then(
         (result) => {
           toast.success("Email Sent");

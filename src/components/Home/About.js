@@ -13,7 +13,6 @@ const About = () => {
                 <div>
                   <img
                     alt="..."
-
                     src={image}
                     class="h-auto rounded-lg  align-middle border-none absolute -m-20 -ml-[98px] lg:-ml-[100px] w-48 lg:w-52  "
                   />
@@ -79,11 +78,11 @@ const About = () => {
               <div class="flex flex-wrap justify-center">
                 <div class="w-full lg:w-9/12 px-4">
                   <p class="mb-4 text-lg leading-relaxed text-white">
-                    I want to be a full-stack web developer. I spend more than 8
-                    hours daily coding. I always try to explore new new
-                    technology. Sometimes I become depressed for errors in my
-                    code. But I am never afraid of errors I try my best to solve
-                    the mistakes.
+                    I am well positioned to maximize my abilities and
+                    qualifications to grow as Tesla's next Front-end Developer
+                    as a passionate and creative technologist with hands-on
+                    experience in a wide range of web tools and programming
+                    languages.
                   </p>
                 </div>
               </div>
