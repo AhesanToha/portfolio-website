@@ -10,13 +10,11 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const from_name = e.target.user_name.value;
-    const email_id = e.target.user_email.value;
-    const message = e.target.message.value;
+
     const param = {
-      from_name,
-      email_id,
-      message,
+      from_name: e.target.user_name.value,
+      email_id: e.target.user_email.value,
+      message: e.target.message.value,
     };
 
     emailjs
@@ -24,6 +22,7 @@ const Contact = () => {
       .then(
         (result) => {
           toast.success("Email Sent");
+          e.target.reset();
         },
         (error) => {
           toast.error("Failed to sent email");
@@ -41,25 +40,25 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              class="input input-bordered input-primary w-auto"
+              className="input input-bordered input-primary w-auto"
               name="user_name"
             />
             <label className="text-gray-200">Email</label>
             <input
               type="email"
               placeholder="Email"
-              class="input input-bordered input-primary w-auto"
+              className="input input-bordered input-primary w-auto"
               name="user_email"
             />
             <label className="text-gray-200">Message</label>
             <textarea
               name="message"
-              class="textarea textarea-primary"
+              className="textarea textarea-primary"
               placeholder="message"
             />
             <input
               type="submit"
-              class="btn btn-sm mt-3 lg:btn-md btn-outline text-primary hover:bg-primary hover:text-[#0A192F]"
+              className="btn btn-sm mt-3 lg:btn-md btn-outline text-primary hover:bg-primary hover:text-[#0A192F]"
               value="Send"
             />
           </form>
